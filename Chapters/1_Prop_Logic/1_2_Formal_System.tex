@@ -21,10 +21,10 @@ For the remainder of this subsection, fix an alphabet $A$. $A$ is not useful on 
 We do not always want all strings to be useful to us, as we shall see in the case of propositional logic. Our next ingredient in the construction of a formal system is the precise set of strings we are allowed to use.
 
 \begin{boxdefinition}[Formulae]
-    A set of \textbf{formulae} is a non-empty subset of a set of strings in $A$.
+    A set of \textbf{formulae} is a non-empty set of strings in $A$.
 \end{boxdefinition}
 
-For the remainder of this subsection, fix a set $\mathcal{F}$ of formulae. It will be important that to distinguish the formulae that will serve as our most basic assumptions and those that will be derived from them.
+For the remainder of this subsection, fix a set $\mathcal{F}$ of formulae. It will be important to distinguish the formulae that will serve as our most basic assumptions from those that will be derived from them.
 
 \begin{boxdefinition}[Axioms]
     A set of \textbf{axioms} is a subset of $\mathcal{F}$.
@@ -78,7 +78,7 @@ Note the following trivial result.
 Finally, we mention a condition on formal deduction systems that lends them to computer-based verification.
 
 \begin{boxdefinition}[Recursive Formal Deduction Systems]
-    Suppose there exists an algorithm that can test whether a string is a formula and whether it is an axiom. Then, $\Sigma$ is called a \textbf{recursive formal deduction system}.
+    Suppose there exists an algorithm that can test whether a string is a formula or an axiom. Then, $\Sigma$ is called a \textbf{recursive formal deduction system}.
 \end{boxdefinition}
 
 The point of the above definition is that in recursive systems, a computer can systematically generate all possible proofs in $\Sigma$ by checking whether every possible formula is an axiom or is derived from axioms using deduction rules. In this case, the validity of any proof can be checked, because each formula in its constituent sequence can be checked.
